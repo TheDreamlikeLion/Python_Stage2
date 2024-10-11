@@ -12,6 +12,9 @@ from pathlib import Path
 import os
 
 
+__all__ = ['rename_files']
+
+
 def rename_files(current_extension: str, desired_extension: str, count_nums: int = 3, range_min: int = 0, range_max: int = 5, disered_name: Path = '') -> None:
     filepath = Path(Path().cwd())
     serial_num = 1

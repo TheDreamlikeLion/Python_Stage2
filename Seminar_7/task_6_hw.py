@@ -9,7 +9,7 @@ from pathlib import Path
 from string import ascii_lowercase, digits
 
 
-__all__ = ['generate_files']
+__all__ = ['generate_files', 'create_file']
 
 
 def generate_files(extensions: list[str], filecount: int, directory=Path().cwd()):
