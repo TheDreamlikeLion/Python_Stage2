@@ -9,6 +9,9 @@ from typing import TextIO
 import json
 
 
+__all__ = ['convert']
+
+
 def convert(file: Path) -> None:
     my_dict = {}
     with open(file, 'r', encoding='utf-8') as f:

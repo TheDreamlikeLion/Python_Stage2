@@ -19,7 +19,7 @@ def pickle_to_csv(file: Path) -> None:
         data = pickle.load(f_read)
         #print(data)
         headers_list = list(data[0].keys())
-        csw_write = cse.DictWriter(f_write, fieldnames=headers_list, dialect='excel-tab', newline='', quoting=csw.QUOTE_NONNUMERIC)
+        csw_write = cse.DictWriter(f_write, fieldnames=headers_list, dialect='excel-tab', newline='', quoting=csv.QUOTE_NONNUMERIC)
         csw_write.writerows(data)
 
 

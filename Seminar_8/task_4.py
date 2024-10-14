@@ -11,8 +11,11 @@ import json
 from pathlib import Path
 
 
+__all__ = ['csv_to_json']
+
+
 def csv_to_json(csv_file: Path, json_file: Path) -> None:
-    with (open(csv_file, 'r', newline='', encoding='utf-8') as f_read:
+    with open(csv_file, 'r', newline='', encoding='utf-8') as f_read:
         csv_read = csv.reader(f_read, dialect='excel-tab')
         for i, line in enumerate(csv_read):
             json_dict = {}

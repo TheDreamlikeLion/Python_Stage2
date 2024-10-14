@@ -11,6 +11,9 @@ import json
 from pathlib import Path
 
 
+__all__ = ['set_users']
+
+
 def set_users(file: Path) -> None:
     u_ids = set()
     if not file.is_file():
